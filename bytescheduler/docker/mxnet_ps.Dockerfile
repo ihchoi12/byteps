@@ -10,7 +10,7 @@ WORKDIR /root
 
 # Install dev tools
 RUN apt-get update && apt-get install -y vim git python-dev build-essential
-RUN apt-get install -y wget && wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py
+RUN apt-get install -y wget && wget https://bootstrap.pypa.io/pip/2.7/get-pip.py && python get-pip.py
 
 # Install gcc 4.9
 RUN mkdir -p /root/gcc/ && cd /root/gcc &&\
